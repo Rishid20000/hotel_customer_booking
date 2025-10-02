@@ -1,0 +1,91 @@
+/* Full page background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Centered container with translucent glass effect */
+.booking-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  /* translucent white */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+/* Title */
+.booking-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.booking-container label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #222;
+}
+
+/* Inputs and dropdowns */
+.booking-container input,
+.booking-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button */
+.booking-container button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0077b6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.booking-container button:hover {
+  background: #023e8a;
+}
+
+/* Loading text */
+.loading {
+  color: #0077b6;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Result */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.result.success {
+  background: rgba(0, 255, 0, 0.1);
+  color: green;
+}
+
+.result.danger {
+  background: rgba(255, 0, 0, 0.1);
+  color: red;
+}

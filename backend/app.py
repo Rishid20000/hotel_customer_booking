@@ -26,6 +26,16 @@ expected_features = [
     "no_of_special_requests"
 ]
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({
+        "message": "Hotel Booking ML API is running!",
+        "status": "online",
+        "endpoints": {
+            "predict": "/predict (POST)"
+        }
+    })
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:

@@ -40,7 +40,8 @@ function BookingForm() {
         no_of_special_requests: Number(form.no_of_special_requests)
       };
 
-      const res = await axios.post("http://localhost:5000/predict", payload);
+      const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+      const res = await axios.post(`${apiUrl}/predict`, payload);
       setResult(res.data.prediction);
     } catch (error) {
       console.error("Error making prediction:", error);

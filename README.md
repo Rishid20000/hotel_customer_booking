@@ -5,7 +5,7 @@ A full-stack machine learning application that predicts hotel booking cancellati
 ## 🌐 Live Application
 
 - **Frontend (React)**: [[Deployed on Vercel](https://hotel-customer-booking-vercel-url.vercel.app)](https://hotel-customer-booking.vercel.app/)
-- **Backend API (Flask)**: [https://hotelcustomerbooking-production.up.railway.app](https://hotelcustomerbooking-production.up.railway.app)
+- **Backend API (Flask)**: [https://hotelcustomerbooking-production.up.railway.app](https://<your-url-provided by railway>.up.railway.app)
 
 ## 🎯 Features
 
@@ -299,4 +299,5 @@ If you encounter any issues or have questions:
 ---
 
 **Built with ❤️ using React, Flask, and Machine Learning**
+
 

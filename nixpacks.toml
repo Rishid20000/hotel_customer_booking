@@ -1,11 +1,11 @@
 [phases.setup]
-nixPkgs = ["python39", "nodejs-18_x"]
+nixPkgs = ["python39"]
 
-[phases.install] 
-cmds = ["cd backend && pip install -r requirements.txt"]
-
-[phases.build]
-cmds = ["echo 'Build completed'"]
+[phases.install]
+cmds = [
+  "pip install -r requirements.txt",
+  "cp -r backend/* ."
+]
 
 [start]
-cmd = "cd backend && gunicorn app:app --host 0.0.0.0 --port $PORT"
+cmd = "gunicorn app:app --host 0.0.0.0 --port $PORT"

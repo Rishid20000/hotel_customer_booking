@@ -33,6 +33,12 @@ df = pd.get_dummies(df, columns=categorical_cols)
 # --------------------------
 # 4. Split Features and Target
 # --------------------------
+
+df["booking_status"] = df["booking_status"].map({
+    "Canceled": 1,
+    "Not_Canceled": 0
+})
+
 X = df.drop("booking_status", axis=1)
 y = df["booking_status"]
 
